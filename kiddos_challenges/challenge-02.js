@@ -14,7 +14,7 @@ const theTerrificTwos = [
 /**
  * Return a specific step for handling two year olds
  */
-function getStep (stepNumber) {
+getStep = (stepNumber) => {
     // takes in a "normal" number that we use in normal speaking terms
     // but we have to translate that for the fussy computer to be zero-based
     const arrayIndex = stepNumber - 1;
@@ -28,4 +28,4 @@ const step1 = getStep(1)
 // {
 //   step1: 'Respect the nap'
 // }
-console.log({step1})
+console.log({ step1 })

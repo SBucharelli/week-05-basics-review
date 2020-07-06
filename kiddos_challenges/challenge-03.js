@@ -15,6 +15,9 @@ const theTerrificTwos = [
  * Return an updated list of steps after appending to the list
  */
 const addStep = (step) => {
+    if (!theTerrificTwos.includes(step)) {
+        theTerrificTwos.push(step)
+    }
     return theTerrificTwos
 }
 
@@ -30,4 +33,4 @@ const allSteps = addStep("Don’t cave in.")
 //     'Don’t cave in.'
 //   ]
 // }
-console.log({allSteps})
+console.log({ allSteps })

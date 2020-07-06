@@ -11,7 +11,7 @@ const theTerrificTwos = [
 /**
  * Return a specific step for handling two year olds
  */
-function getStep (stepNumber) {
+function getStep(stepNumber) {
     // takes in a "normal" number that we use in normal speaking terms
     // but we have to translate that for the fussy computer to be zero-based
     const arrayIndex = stepNumber - 1;
@@ -22,8 +22,10 @@ function getStep (stepNumber) {
 const step1 = getStep(1)
 
 // step 1 not enough? What is step 2?
+const step2 = getStep(2)
 
 // step 2 not enough? What is step 3?
+const step3 = getStep(3)
 
 // Expect 
 // {
@@ -31,4 +33,4 @@ const step1 = getStep(1)
 //   step2: 'Stick to a schedule with meals',
 //   step3: 'Talk through triggers ahead of time'
 // }
-console.log({step1, step2, step3})
+console.log({ step1, step2, step3 })
